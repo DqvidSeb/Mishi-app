@@ -1,0 +1,124 @@
+{
+  "workbench.colorCustomizations": {
+    /* ======= Base (casi-negros por capas) ======= */
+    "titleBar.activeBackground": "#0a0d12",
+    "titleBar.inactiveBackground": "#080b10",
+    "titleBar.activeForeground": "#e6edf3",
+    "titleBar.inactiveForeground": "#9aa4b2",
+
+    "activityBar.background": "#070a0f",
+    "activityBar.activeBackground": "#0d1117",
+    "activityBar.foreground": "#c9d1d9",
+    "activityBar.inactiveForeground": "#8b949e99",
+    "activityBarBadge.background": "#2f81f7",
+    "activityBarBadge.foreground": "#0b1220",
+
+    "sideBar.background": "#0a0e14",
+    "sideBar.foreground": "#c9d1d9",
+    "sideBar.border": "#141a23",
+    "sideBarSectionHeader.background": "#0d1117",
+    "sideBarSectionHeader.foreground": "#e6edf3",
+    "sideBarTitle.foreground": "#9fb7ff",
+
+    "panel.background": "#080b10",
+    "panel.border": "#141a23",
+    "panelTitle.activeForeground": "#e6edf3",
+    "panelTitle.inactiveForeground": "#8b949e",
+
+    "statusBar.background": "#070a0f",
+    "statusBar.foreground": "#c9d1d9",
+    "statusBarItem.hoverBackground": "#0d1117",
+    "statusBarItem.remoteBackground": "#2f81f7",
+    "statusBarItem.remoteForeground": "#0b1220",
+
+    "tab.activeBackground": "#111827",
+    "tab.activeForeground": "#e6edf3",
+    "tab.inactiveBackground": "#0a0e14",
+    "tab.inactiveForeground": "#8b949e",
+    "tab.border": "#141a23",
+    "editorGroupHeader.tabsBackground": "#0a0e14",
+    "editorGroup.border": "#141a23",
+
+    /* ======= Editor (más claro que el resto) ======= */
+    "editor.background": "#111827",
+    "editor.foreground": "#e6edf3",
+
+    "editor.lineHighlightBackground": "#1f293733",
+    "editorLineNumber.foreground": "#6b7280",
+    "editorLineNumber.activeForeground": "#cbd5e1",
+    "editorWhitespace.foreground": "#273244",
+
+    "editorCursor.foreground": "#2f81f7",
+
+    /* Selección: azul MUY sutil */
+    "editor.selectionBackground": "#2f81f733",
+    "editor.selectionHighlightBackground": "#2f81f71f",
+    "editor.inactiveSelectionBackground": "#2f81f714",
+
+    "editorBracketMatch.background": "#2f81f71f",
+    "editorBracketMatch.border": "#2f81f7",
+
+    /* Find: cálido suave + highlight cyan tenue */
+    "editor.findMatchBackground": "#fbbf2433",
+    "editor.findMatchHighlightBackground": "#22d3ee22",
+
+    /* ======= Inputs / Lists (sobrios) ======= */
+    "input.background": "#0d1117",
+    "input.foreground": "#e6edf3",
+    "input.border": "#1b2431",
+    "dropdown.background": "#0d1117",
+    "dropdown.foreground": "#e6edf3",
+    "dropdown.border": "#1b2431",
+
+    "list.activeSelectionBackground": "#2f81f722",
+    "list.activeSelectionForeground": "#e6edf3",
+    "list.hoverBackground": "#0d1117",
+    "list.inactiveSelectionBackground": "#0d111766",
+
+    /* ======= Terminal (un nivel entre panel y editor) ======= */
+    "terminal.background": "#0b0f16",
+    "terminal.foreground": "#c9d1d9",
+    "terminalCursor.background": "#0b0f16",
+    "terminalCursor.foreground": "#2f81f7",
+
+    /* ======= Detalles mínimos ======= */
+    "commandCenter.border": "#1b2431",
+    "sash.hoverBorder": "#2f81f7",
+
+    "scrollbarSlider.background": "#2f81f71f",
+    "scrollbarSlider.hoverBackground": "#2f81f733",
+    "scrollbarSlider.activeBackground": "#2f81f755",
+
+    "minimap.selectionHighlight": "#2f81f733",
+    "peekView.border": "#1b2431",
+    "peekViewEditor.background": "#111827",
+    "peekViewResult.background": "#0a0e14",
+    "peekViewTitle.background": "#0d1117",
+
+    /* Botones: gris oscuro (casi nada de azul) */
+    "button.background": "#1f2937",
+    "button.foreground": "#e6edf3",
+    "button.hoverBackground": "#273244"
+  },
+
+  "workbench.colorTheme": "Default Dark Modern",
+  "peacock.color": "#2f81f7",
+
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.cursorBlinking": true,
+
+  "editor.fontLigatures": true,
+  "editor.smoothScrolling": true,
+  "editor.guides.bracketPairs": true,
+  "window.titleBarStyle": "custom",
+
+  "conventionalCommits.scopes": [
+    "config",
+    "DTO",
+    "entity",
+    "companies",
+    "users",
+    "events",
+    "All Types"
+  ]
+}
