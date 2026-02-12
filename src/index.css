@@ -1,1 +1,45 @@
+/* /src/index.css */
 @import "tailwindcss";
+
+/* =========================
+   DOGICA (Regular + Bold)
+   ========================= */
+@font-face {
+  font-family: "Dogica";
+  src: url("./assets/fonts/dogica/dogica.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dogica";
+  src: url("./assets/fonts/dogica/dogicabold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* =========================
+   DOGICA PIXEL (Regular + Bold)
+   ========================= */
+@font-face {
+  font-family: "DogicaPixel";
+  src: url("./assets/fonts/dogica/dogicapixel.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "DogicaPixel";
+  src: url("./assets/fonts/dogica/dogicapixelbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* utilidades rápidas */
+.font-dogica {
+  font-family: "Dogica", monospace;
+}
+
+.font-dogica-pixel {
+  font-family: "DogicaPixel", monospace;
+}
