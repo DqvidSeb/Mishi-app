@@ -7,6 +7,8 @@ import { PATHS } from "./routes/paths";
 import LoadingPage from "./pages/LoadingPage";
 import MenuPage from "./pages/MenuPage";
 import ValentinePage from "./pages/valentine/ValentinePage";
+import ReadMePage from "./pages/readme/ReadMePage";
+import CreditsPage from "./pages/credits/CreditsPage";
 import MiniGamePage from "./pages/minigames/be-my-valentine/MiniGamePage";
 import ValentineWinPage from "./pages/minigames/be-my-valentine/ValentineWinPage";
 
@@ -25,6 +27,8 @@ function AppRoutes() {
           <Route path={PATHS.loading} element={<LoadingPage />} />
           <Route path={PATHS.menu} element={<MenuPage />} />
           <Route path={PATHS.valentine} element={<ValentinePage />} />
+          <Route path={PATHS.readMe} element={<ReadMePage />} />
+          <Route path={PATHS.credits} element={<CreditsPage />} />
           <Route path={PATHS.minigames.beMyValentine} element={<MiniGamePage />} />
           <Route path={PATHS.minigames.beMyValentineWin} element={<ValentineWinPage />} />
           <Route path="*" element={<Navigate to={PATHS.root} replace />} />
