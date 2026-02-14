@@ -1,3 +1,4 @@
+// /src/components/ui/PixelButton.tsx
 import React, { useMemo, useState } from "react";
 
 import mediumNormal from "../../assets/ui/ui_medium_button_normal.png";
@@ -17,12 +18,7 @@ type Props = {
     className?: string;
 };
 
-export default function PixelButton({
-    label,
-    onClick,
-    size = "medium",
-    className,
-}: Props) {
+export default function PixelButton({ label, onClick, size = "medium", className }: Props) {
     const [state, setState] = useState<"normal" | "hover" | "pressed">("normal");
 
     const src = useMemo(() => {
@@ -39,12 +35,14 @@ export default function PixelButton({
         <button
             type="button"
             onClick={onClick}
-            onMouseEnter={() => setState("hover")}
-            onMouseLeave={() => setState("normal")}
-            onMouseDown={() => setState("pressed")}
-            onMouseUp={() => setState("hover")}
+            onPointerEnter={() => setState("hover")}
+            onPointerLeave={() => setState("normal")}
+            onPointerDown={() => setState("pressed")}
+            onPointerUp={() => setState("hover")}
+            onPointerCancel={() => setState("normal")}
+            onBlur={() => setState("normal")}
             className={[
-                "relative flex items-center justify-center select-none",
+                "relative flex items-center justify-center select-none cursor-pointer",
                 "bg-transparent border-0 p-0",
                 "font-dogica-pixel leading-none text-[#111]",
                 "focus:outline-none",
@@ -60,6 +58,7 @@ export default function PixelButton({
                 imageRendering: "pixelated",
                 transform: state === "pressed" ? "translateY(1px)" : "translateY(0px)",
             }}
+            aria-label={label}
         >
             {label}
         </button>

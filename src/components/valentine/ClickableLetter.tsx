@@ -1,10 +1,13 @@
-// /src/components/valentine/ClickableLetter.tsx
 import React, { useState } from "react";
 
 import closedSrc from "../../assets/images/letter_closed.png";
 import hoverSrc from "../../assets/images/letter_hover.png";
 
-export default function ClickableLetter() {
+type Props = {
+    onOpen?: () => void;
+};
+
+export default function ClickableLetter({ onOpen }: Props) {
     const [isHover, setIsHover] = useState(false);
     const [isPressed, setIsPressed] = useState(false);
 
@@ -14,17 +17,18 @@ export default function ClickableLetter() {
         <button
             type="button"
             className="bg-transparent border-0 p-0 select-none"
-            onMouseEnter={() => setIsHover(true)}
-            onMouseLeave={() => {
+            onPointerEnter={() => setIsHover(true)}
+            onPointerLeave={() => {
                 setIsHover(false);
                 setIsPressed(false);
             }}
-            onMouseDown={() => setIsPressed(true)}
-            onMouseUp={() => setIsPressed(false)}
+            onPointerDown={() => setIsPressed(true)}
+            onPointerUp={() => setIsPressed(false)}
+            onPointerCancel={() => setIsPressed(false)}
             onClick={() => {
-                // por ahora no navega a nada, solo efecto visual
                 setIsPressed(true);
-                setTimeout(() => setIsPressed(false), 80);
+                window.setTimeout(() => setIsPressed(false), 80);
+                onOpen?.();
             }}
             style={{
                 transform: isPressed ? "translateY(3px)" : "translateY(0px)",
