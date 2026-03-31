@@ -1,5 +1,5 @@
 // /src/components/ui/PixelButton.tsx
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 
 import mediumNormal from "../../assets/ui/ui_medium_button_normal.png";
 import mediumHover from "../../assets/ui/ui_medium_button_hover.png";

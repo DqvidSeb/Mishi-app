@@ -4,6 +4,7 @@ import uiPanel from "../assets/ui/ui_panel.png";
 import PixelButton from "../components/ui/PixelButton";
 import { getCurrentWindow } from "@tauri-apps/api/window";
 import { useTransition } from "../components/transition/TransitionProvider";
+import { toLoading } from "../routes/loading";
 import { PATHS } from "../routes/paths";
 
 export default function MenuPage() {
@@ -18,15 +19,25 @@ export default function MenuPage() {
     const { fadeTo } = useTransition();
 
     const goValentine = () => {
-        fadeTo("/loading?next=/valentine&ms=3800");
+        fadeTo(
+            toLoading({
+                next: PATHS.valentine,
+                ms: 3800,
+            })
+        );
     };
 
     const goReadMe = () => {
         fadeTo(PATHS.readMe);
     };
 
-    const goCredits = () => {
-        fadeTo(PATHS.credits);
+    const goReadUs = () => {
+        fadeTo(
+            toLoading({
+                next: PATHS.readUs,
+                ms: 2200,
+            })
+        );
     };
 
     return (
@@ -52,7 +63,7 @@ export default function MenuPage() {
                         <div className="flex flex-col items-center gap-5">
                             <PixelButton size="small" label="Be my Valentine" onClick={goValentine} />
                             <PixelButton size="small" label="Read me" onClick={goReadMe} />
-                            <PixelButton size="small" label="Credits" onClick={goCredits} />
+                            <PixelButton size="small" label="Read us" onClick={goReadUs} />
                             <PixelButton size="small" label="Exit" onClick={onExit} />
                         </div>
                     </div>

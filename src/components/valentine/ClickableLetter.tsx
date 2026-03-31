@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import closedSrc from "../../assets/images/letter_closed.png";
 import hoverSrc from "../../assets/images/letter_hover.png";

@@ -101,7 +101,7 @@
     "button.hoverBackground": "#273244"
   },
 
-  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Dark Modern",
   "peacock.color": "#2f81f7",
 
   "terminal.integrated.cursorStyle": "line",

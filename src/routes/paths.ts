@@ -5,7 +5,7 @@ export const PATHS = {
     menu: "/menu",
     valentine: "/valentine",
     readMe: "/read-me",
-    credits: "/credits",
+    readUs: "/read-us",
 
     minigames: {
         beMyValentine: "/minigames/be-my-valentine",
